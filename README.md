@@ -1,2 +1,2 @@
 # lorwez.github.io
-theme: minima
+theme: slate
