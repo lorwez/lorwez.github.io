@@ -1,4 +1,24 @@
 body{
    background-color: magenta;
    font-size: 100%; 
+   margin: 0;
+   padding: 0;
+}
+
+.box {
+   background-color: lightblue;
+   border: 1px, black;
+   padding: 10px;
+}
+
+.content{
+   text-align: left;
+   color: navy;
+}
+
+
+h1{
+   text-align: center;
+   color: black;
+   margin-bottom: 30px;
 }
