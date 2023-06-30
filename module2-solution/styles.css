@@ -2,16 +2,15 @@ body{
    background-color: magenta;
    font-size: 100%; 
    margin: 0;
-   padding: 0;
 }
 
-.box {
+.box{
    background-color: lightblue;
    border: 1px, black;
    padding: 10px;
 }
 
-.content{
+#content{
    text-align: left;
    color: navy;
 }
