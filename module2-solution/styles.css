@@ -22,6 +22,17 @@ body{
    width: 200px;
 }
 
+#testbox{
+   background-color: lightblue;
+   border: 1px solid black;
+   padding: 10px;
+   margin: 50px;
+   width: 300px;
+   margin-top: 50px;
+   text-align: left;
+   color: navy;
+}
+
 
 h1{
    text-align: center;
