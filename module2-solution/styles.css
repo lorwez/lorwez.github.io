@@ -24,6 +24,7 @@ h1{
    border: 1px solid black;
    margin: 10px;
    float: left;
+   box-sizing: border-box;
 }
 
 #content{
@@ -76,22 +77,21 @@ h1{
 @media (min-width:992px){
 
    .box, .bigbox{
-      width: 32.5%;
+      width: 31%;
    }
    }
 
 
 /********** TABLET **********/
 
-@media (min-width:768px)and(max-width:991px){
+@media (min-width:768px) and (max-width:991px){
+   .box{
+      width: 45%;
+   }
+   .bigbox{
+      width: 92%;
+   }
 
-.box{
-   width: 10px;
-}
-
-.bigbox{
-   width: 20px;
-}
 }
 
 /********** MOBILE **********/
