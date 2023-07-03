@@ -1,6 +1,7 @@
+/* BASE STYLES */
+
 body{
    background-color: magenta;
-   font-size: 100%;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    margin: 0;
    padding: 0;
@@ -9,12 +10,25 @@ body{
 * {
    box-sizing: border-box;
 }
+ 
+h1{
+   text-align: center;
+   color: black;
+   margin-bottom: 30px;
+   font-size: 250%;
+}
 
 .box{
    background-color: lightblue;
    border: 1px solid black;
    margin: 10px;
-   width: 31.5%;
+   float: left;
+}
+
+.bigbox{
+   background-color: lightblue;
+   border: 1px solid black;
+   margin: 10px;
    float: left;
 }
 
@@ -22,6 +36,7 @@ body{
    text-align: left;
    color: navy;
    margin: 40px 10px 10px 15px;
+   font-size: 80%;
 }
 
 #smallbox1{
@@ -30,10 +45,11 @@ body{
    float: right;
    width: 80px;
    margin: 0px;
-   padding: 5px 2px 4px 5px;
+   padding: 5px 2px 4px 4px;
    border-top: 0px;
    border-right: 0px;
    text-align: center;
+   font-size: 100%;
 }
 
 #smallbox2{
@@ -42,7 +58,7 @@ body{
    float: right;
    width: 80px;
    margin: 0px;
-   padding: 5px 2px 4px 5px;
+   padding: 5px 2px 4px 4px;
    border-top: 0px;
    border-right: 0px;
    text-align: center;
@@ -54,14 +70,52 @@ body{
    float: right;
    width: 80px;
    margin: 0px;
-   padding: 5px 2px 4px 5px;
+   padding: 5px 2px 4px 4px;
    border-top: 0px;
    border-right: 0px;
    text-align: center;
 }
 
-h1{
-   text-align: center;
-   color: black;
-   margin-bottom: 30px;
+
+/********** DESKTOP **********/
+
+@media (min-width:992px){
+
+.box, .bigbox{
+      width: 30%;
+   }
+   
+}
+
+
+/********** TABLET **********/
+
+@media (min-width:768px)and(max-width:991px){
+
+.box{
+   width: 40%;
+}
+.bigbox{
+   width: 80%;
+   position: absolute;
+}
+   
+}
+
+
+
+/********** MOBILE **********/
+
+@media (max-width: 767px){
+
+   .box{
+      width: 90%;
+   }
+   
+   .bigbox{
+      width: 90%;
+   }
+
+
+
 }
