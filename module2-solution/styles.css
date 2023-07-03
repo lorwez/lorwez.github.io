@@ -86,9 +86,11 @@ h1{
 
 @media (min-width:768px) and (max-width:991px){
    .box{
+      box-sizing: border-box;
       width: 45%;
    }
    .bigbox{
+      box-sizing: border-box;
       width: 92%;
    }
 
