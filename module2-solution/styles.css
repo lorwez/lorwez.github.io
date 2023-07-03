@@ -5,6 +5,7 @@ body{
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
 }
 
 * {
@@ -18,14 +19,7 @@ h1{
    font-size: 250%;
 }
 
-.box{
-   background-color: lightblue;
-   border: 1px solid black;
-   margin: 10px;
-   float: left;
-}
-
-.bigbox{
+.box, .bigbox{
    background-color: lightblue;
    border: 1px solid black;
    margin: 10px;
@@ -81,11 +75,10 @@ h1{
 
 @media (min-width:992px){
 
-.box, .bigbox{
-      width: 30%;
+   .box, .bigbox{
+      width: 31.5%;
    }
-   
-}
+   }
 
 
 /********** TABLET **********/
@@ -93,29 +86,20 @@ h1{
 @media (min-width:768px)and(max-width:991px){
 
 .box{
-   width: 40%;
+   width: 10px;
 }
+
 .bigbox{
-   width: 80%;
-   position: absolute;
+   width: 20px;
 }
-   
 }
-
-
 
 /********** MOBILE **********/
 
-@media (max-width: 767px){
+@media (max-width:767px){
 
-   .box{
+   .box, .bigbox{
       width: 90%;
    }
-   
-   .bigbox{
-      width: 90%;
-   }
-
-
 
 }
